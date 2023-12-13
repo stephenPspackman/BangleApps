@@ -1,0 +1,13 @@
+{ "id": "widtz",
+  "name": "Time Zone Widget",
+  "version":"0.01",
+  "description": "Display the current timezone, with its human-readable short label, if known.",
+  "icon": "icon.png",
+  "type": "widget",
+  "tags": "widget,timezone",
+  "supports" : ["BANGLEJS2"],
+  "readme": "README.md",
+  "storage": [
+    {"name":"widtz.wid.js","url":"widget.js"}
+  ]
+}
