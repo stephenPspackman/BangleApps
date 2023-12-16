@@ -33,5 +33,6 @@
       g.drawString(tzf, this.x+this.width/2, vp);
     }
   };
-  Bangle.on("timezone", () => WIDGETS.widtz.draw());
+  const settz = E.setTimeZone;
+  E.setTimeZone = (z, id) => {settz(z, id); WIDGETS.widtz.draw();};
 }
