@@ -9,9 +9,9 @@
       const settings = require('Storage').readJSON('setting.json',1)||{};
       var vp = this.y+11;
       g.reset();
-      g.setColor(settings.bg);
+      g.setColor(settings.theme.bg);
       g.fillRect(this.x, this.y, this.x+this.width-1, this.y+this.height-1);
-      g.setColor(settings.fg);
+      g.setColor(settings.theme.fg);
       g.setFontAlign(0,-1);
       const id = settings.timezoneid || 'GMT';
       g.setFont(id.length <= 3 ? '6x8' : '4x5');
